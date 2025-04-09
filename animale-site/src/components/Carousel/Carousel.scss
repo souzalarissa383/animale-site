@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 400px;
+
+    .prev,
+    .next {
+      padding: 8px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    height: 300px;
+
+    .prev,
+    .next {
+      padding: 6px;
+      font-size: 14px;
+    }
+  }
+}

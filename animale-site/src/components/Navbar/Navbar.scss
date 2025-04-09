@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  color: #000000;
+  background-color: #FFFFFF;
+
+  &-top {
+    background: #f5f5f5;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    padding: 8px 0;
+
+    span {
+      margin: 0 8px;
+    }
+  }
+
+  .inside-logo {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+  }
+
+  &-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ddd;
+  }
+
+  &-left,
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &-brand {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+
+  &-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .icon {
+    font-size: 18px;
+    color: black;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .cart {
+    position: relative;
+
+    .cart-count {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: black;
+      color: white;
+      font-size: 10px;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    &-main {
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    &-left,
+    &-right {
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    &-center {
+      order: -1;
+      margin-bottom: 16px;
+    }
+
+    &-links {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+
+    .user {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    &-top {
+      font-size: 10px;
+      padding: 6px 0;
+
+      span {
+        margin: 0 4px;
+      }
+    }
+
+    &-brand {
+      font-size: 20px;
+    }
+
+    &-links {
+      gap: 8px;
+
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .icon {
+      font-size: 14px;
+    }
+
+    .user {
+      font-size: 10px;
+    }
+  }
+}
