@@ -1,28 +1,83 @@
-# Desafio FrontEnd
+# Animale Store
 
-## Instruções gerais para o teste
-* Dê um fork neste projeto;
-* Desenvolva a tela;
-* Atualize o readme com as instruções necessárias para rodar o seu código;
-* Faça um pull request.
+Este projeto é uma aplicação web desenvolvida para exibir produtos de uma loja online. Ele inclui funcionalidades como listagem de produtos, paginação, exibição de detalhes do produto e seleção de tamanhos.
 
+## Estrutura de Pastas
 
-##### Sugestões de implementação
-* Interação com JSON para renderizar os produtos (você vai encontrar um mockup em src/data/products.json)
-* Componentização dos elementos
-* Filtro de produtos funcional
-* Adicionar produtos ao carrinho funcional
-* Botão de carregar mais produtos
+```
+C:\Users\laris\OneDrive\Área de Trabalho\dev-challenge\animale-site\src
+├── components
+│   ├── Carousel
+│   │   ├── Carousel.js
+│   │   └── Carousel.scss
+│   ├── DetailsProduct
+│   │   ├── DetailsProduct.js
+│   │   └── DetailsProduct.scss
+│   ├── Footer
+│   │   ├── Footer.js
+│   │   └── Footer.scss
+│   ├── Home
+│   │   ├── Home.js
+│   │   └── Home.scss
+│   ├── Navbar
+│   │   ├── Navbar.js
+│   │   └── Navbar.scss
+│   ├── ProductList
+│   │   ├── Product.js
+|   |   ├── ProductList.js  
+│   │   └── ProductList.scss
+│   └── Sidebar
+│       ├── Sidebar.js
+│       └── Sidebar.scss
+├── App.js
+└── index.js
+```
 
-##### Dicas
-* Evite usar linguagens, ferramentas e metodologias que não domine;
-* Não esqueça de manter o package atualizado com os módulos necessários para rodar seu projeto;
-* Use o readme também para explicar o que foi feito e os motivos das escolhas
+## Funcionalidades
+- **Listagem de Produtos**: Exibe uma lista de produtos com paginação. Para acessar, clique em **Coleções** no menu de navegação (Navbar).
+- **Detalhes do Produto**: Permite visualizar informações detalhadas de um produto, incluindo preço, descrição e imagens.
+- **Avaliações**: Exibe a quantidade de avaliações como estrelas.
+- **Seleção de Tamanho**: Possibilita a escolha de tamanhos do produto.
+- **Layout Responsivo**: Design adaptável para diferentes dispositivos.
+- **Integração com API**: Consome dados de uma API para exibir os produtos dinamicamente.
 
-##### Link para o layout
-* Mobile: https://xd.adobe.com/view/e372993c-5e75-4462-91a4-1982b31e5726-b621/ 
-* Desktop: https://xd.adobe.com/view/2c1dace9-52a9-4416-bb15-18a2f9e32059-794e/
+## Tecnologias Utilizadas e Motivos
+- **React**: Escolhi utilizar React porque ele facilita a criação de interfaces dinâmicas e reutilizáveis, tornando o código mais organizado e fácil de manter.
+- **Axios**: Utilizei o Axios para fazer chamadas à API, pois ele é simples de usar e lida bem com requisições HTTP.
+- **Sass**: Optei por usar Sass para organizar melhor os estilos, permitindo um código CSS mais limpo e modular, com recursos como variáveis e aninhamento.
+- **React Router**: Utilizei o React Router para gerenciar as rotas da aplicação, permitindo navegar entre páginas sem recarregar a tela.
+- **JavaScript**: Escolhi JavaScript por ser uma linguagem amplamente usada e flexível, ideal para desenvolvimento web.
 
+## Como Executar o Projeto
+Siga os passos abaixo para rodar o projeto localmente.
 
+### **Pré-requisitos**
+- Node.js (versão 16 ou superior)
+- npm ou yarn
 
-###### Dúvidas: vinicius.diniz@somagrupo.com.br
+### **Passos**
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/animale-site.git
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd animale-site
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
+5. Acesse a aplicação no navegador:
+   ```
+   http://localhost:3000
+   ```
+
